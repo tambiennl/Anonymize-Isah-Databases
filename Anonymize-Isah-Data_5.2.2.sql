@@ -22,7 +22,7 @@ GO
 SET NOCOUNT ON
 GO
 
-IF DB_NAME() like '%prod%'
+IF DB_NAME() not like '%test%'
 BEGIN
 	PRINT 'This script is targetted to run on database '+db_name()+ ' which looks like a production database. The script is halted.'
 END
