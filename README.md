@@ -17,3 +17,36 @@ Take note that the script modifies data in the database which can cause the data
 Test the script in a safe environment before using it in your production environment.
 
 This script will take some time to complete, be patient!
+
+------------------
+Details
+
+The script will perform these actions:
+- Check if the target database does not contains the word PROD. If so the script will not run. This is to ensure no live data is removed
+- Create table ST_T_Anonymized (if not existing) and insert a record for logging of the execution and
+- Create some helpers tables (IBAN and VAT numbers to replace existing ones with technical valid ones)
+- Anonimize T_BankAccount
+- Empty T_BankAccountLog
+- Anonimize T_CallRegistration
+- Anonimize T_Customer
+- Empty T_CustomerLog
+- Anonimize T_CustomerAddress
+- Empty T_CustomerAddressLog
+- Anonimize T_CustomerRelation
+- Anonimize T_Department
+- Anonimize T_DossierDetail
+- Anonimize T_DossierMain
+- Anonimize T_Employee
+- Empty all T_Hist?? tables
+- Anonimize T_InvoiceDetail
+- Anonimize T_InvoiceMain
+- Anonimize T_MemoDetail
+- Anonimize T_Part
+- Anonimize T_ProductionHeader
+- Anonimize T_ServObject
+- Anonimize T_Vendor
+- Empty T_VendorLog
+- Anonimize T_VendorAddress
+- Empty T_VendorAddressLog
+- Anonimize T_VendorRelation
+- Update ST_T_Anonymized with end time
