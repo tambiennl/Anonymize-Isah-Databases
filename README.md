@@ -22,7 +22,7 @@ This script will take some time to complete, be patient!
 Details
 
 The script will perform these actions:
-- Check if the target database does not contains the word PROD. If so the script will not run. This is to ensure no live data is removed
+- Check if the target database contains the word TEST. If not the script will not run. This is to ensure no live data is removed
 - Create table ST_T_Anonymized (if not existing) and insert a record for logging of the execution and
 - Create some helpers tables (IBAN and VAT numbers to replace existing ones with technical valid ones)
 - Anonimize T_BankAccount
