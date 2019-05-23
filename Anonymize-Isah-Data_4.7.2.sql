@@ -22,9 +22,9 @@ GO
 SET NOCOUNT ON
 GO
 
-IF DB_NAME() not like '%test%'
+IF DB_NAME() not like '%anonimized%'
 BEGIN
-	PRINT 'This script is targetted to run on database '+db_name()+ ' which looks like a production database. The script is halted.'
+	PRINT 'This script is targetted to run on database '+db_name()+ '. We expecteed the name to contain the word anonimized. The script is halted.'
 END
 ELSE
 BEGIN
