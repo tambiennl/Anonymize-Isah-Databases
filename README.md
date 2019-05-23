@@ -5,6 +5,8 @@ Anonymize data in Isah databases
 The scripts in this repo can be used to anonimize data in Isah Databases. 
 The script will replace data that may impose a risk to a company when distributed with dummy data.
 
+Use the correct script ( created for the Isah Database version you are using) to make sure it will operate as intended and without error's.
+
 This sql script may be used at your own risk. 
 Tambien will not accept any responsibility for the functionality of this script.
 Tambien hereby grants anyone the right to use and modify this script to it's own liking.
