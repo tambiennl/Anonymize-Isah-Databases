@@ -2,8 +2,8 @@
 
 Anonymize data in Isah databases
 
-The scripts in this repo can be used to anonimize data in Isah Databases. 
-The script will replace data that may impose a risk to a company when distributed with dummy data.
+The scripts in this repo can be used to anonymize data in Isah Databases. 
+The script will make it safer to distributed a copy of an Isah Database by replacing the data that may impose a security or GDPR risk with dummy data.
 
 Use the correct script (created for the Isah Database version you are using) to make sure it will operate as intended and without error's. We suggest to load a backup of the live/production environment to a new database named 'Anonimized_[ORIGINALNAME]' and excecute the script on that database. The script is secured to only work on database with the word 'anonimized' in the name to prevent unintended execution. 
 
