@@ -1,4 +1,4 @@
-# Anonymize-Isah-Databases
+# Anonymize Isah Databases
 
 Anonymize data in Isah databases
 
